@@ -1,0 +1,10 @@
+.git
+.agents
+.aws
+.codex
+.venv
+data
+**/__pycache__
+frontend/node_modules
+frontend/dist
+tests

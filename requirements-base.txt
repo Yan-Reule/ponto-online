@@ -1,0 +1,4 @@
+Flask==3.1.2
+Pillow==11.3.0
+waitress==3.0.2
+tzdata==2025.2

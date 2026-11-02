@@ -1,0 +1,14 @@
+services:
+  pontoface:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      APP_TIMEZONE: America/Araguaina
+      DATABASE_PATH: /app/data/ponto.sqlite3
+    volumes:
+      - ./data:/app/data
+      - face-models:/models
+    restart: unless-stopped
+volumes:
+  face-models:
